@@ -1,0 +1,3 @@
+#!/usr/bin/env fish
+convert -crop 1960x1960 $argv[1] $argv[1]_cropped_%d.tif
+convert -background white -extent 1960x1960 $argv[1]_cropped_*.tif $argv[1]_square_%d.jpg
