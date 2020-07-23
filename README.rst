@@ -1,6 +1,6 @@
-=========================
-Instagram carousel slicer
-=========================
+===============
+Panorama slicer
+===============
 
 Takes a landscape-oriented image of 1960px height and arbitrary width.
 
@@ -16,6 +16,11 @@ Intermediate output is .tif files, created in the same directory as input.
 They are not removed upon completion to avoid data loss.
 
 .. note:: The image is expected to be 1960px tall.
+
+Use cases
+---------
+
+* Instagram carousel.
 
 Pre-requirements
 ----------------
