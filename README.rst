@@ -8,7 +8,7 @@ Slices are placed in the same directory as input and named
 ``<your original filename>_slice_<sequential number>.jpg``.
 
 If given horizontally oriented image is not evenly divisible,
-fills in the remainder of the last square with white background.
+fills the remainder of the last square with white background.
 
 Intermediate output is .tif files, created in the same directory as input.
 They are not removed upon completion to avoid data loss.
