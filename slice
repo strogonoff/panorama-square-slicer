@@ -1,15 +1,12 @@
 #!/usr/bin/env fish
-#
-set SOURCE_PATH "$argv[1]"
 
+set SOURCE_PATH "$argv[1]"
 echo "Processing $SOURCE_PATH"
 
 set SQUARE_SIDE (identify -format "%h" "$SOURCE_PATH")
-
 echo "Detected image height as ""$SQUARE_SIDE""px"
 
 convert -crop "$SQUARE_SIDE"x"$SQUARE_SIDE" "$SOURCE_PATH" "$SOURCE_PATH"_cropped_%d.tif
-
 convert -background white -extent "$SQUARE_SIDE"x"$SQUARE_SIDE" "$SOURCE_PATH"_cropped_*.tif -quality 95 "$SOURCE_PATH"_slice_%d.jpg
 
 echo "Done."
