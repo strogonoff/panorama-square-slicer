@@ -4,7 +4,7 @@ Panorama slicer
 
 Takes a landscape-oriented image of 1960px height and arbitrary width.
 
-Slices it into into 1960x1960px squares with no gap.
+Slices it into 1960x1960px squares with no gap.
 
 Slices are placed in the same directory as input and named
 ``<your original filename>_square_<sequential number>.jpg``.
