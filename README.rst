@@ -2,20 +2,16 @@
 Panorama slicer
 ===============
 
-Takes a landscape-oriented image of 1960px height and arbitrary width.
-
-Slices it into 1960x1960px squares with no gap.
+Takes a landscape-oriented image and slices it into even squares with no gap.
 
 Slices are placed in the same directory as input and named
-``<your original filename>_square_<sequential number>.jpg``.
+``<your original filename>_slice_<sequential number>.jpg``.
 
-If landscape is not evenly divisible, fills in the remainder of the last
-square with white background.
+If given horizontally oriented image is not evenly divisible,
+fills in the remainder of the last square with white background.
 
 Intermediate output is .tif files, created in the same directory as input.
 They are not removed upon completion to avoid data loss.
-
-.. note:: The image is expected to be 1960px tall.
 
 Use cases
 ---------
@@ -34,4 +30,4 @@ Usage
 
 ::
 
-  ./slice <path/to/file.png>
+  ./slice <relative/or/absolute/path/to/file.png>
